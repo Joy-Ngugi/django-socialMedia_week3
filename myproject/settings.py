@@ -30,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-587h%z4df2a-jeab75o@y%-yebgs52)a$wz%w*4-t4&#z$^e0h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-socialmedia-week3.onrender.com']
 
 
 # Application definition
