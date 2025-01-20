@@ -15,6 +15,7 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 import os
+import dj_database_url
 
 
 
@@ -89,15 +90,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'social_media_db',
+#         'USER': 'social_media_user',
+#         'PASSWORD': 'joyjoy',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'social_media_db',
-        'USER': 'social_media_user',
-        'PASSWORD': 'joyjoy',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.parse("postgresql://test_blog_9wtd_user:AFQPO00LyhMWof0oi0q1YGmniGanQHDo@dpg-ctucoojtq21c73bhbd50-a.oregon-postgres.render.com/test_blog_9wtd")
+    
 }
 
 # Password validation
