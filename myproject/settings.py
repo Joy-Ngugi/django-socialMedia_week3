@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-587h%z4df2a-jeab75o@y%-yebgs52)a$wz%w*4-t4&#z$^e0h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django-socialmedia-week3.onrender.com']
+ALLOWED_HOSTS = ['django-socialmedia-week3.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
